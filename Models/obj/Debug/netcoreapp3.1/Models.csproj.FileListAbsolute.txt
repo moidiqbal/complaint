@@ -1,0 +1,15 @@
+D:\Waqar\Office\Complaint\Models\bin\Debug\netcoreapp3.1\Models.deps.json
+D:\Waqar\Office\Complaint\Models\bin\Debug\netcoreapp3.1\Models.dll
+D:\Waqar\Office\Complaint\Models\bin\Debug\netcoreapp3.1\Models.pdb
+D:\Waqar\Office\Complaint\Models\obj\Debug\netcoreapp3.1\Models.csprojAssemblyReference.cache
+D:\Waqar\Office\Complaint\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfoInputs.cache
+D:\Waqar\Office\Complaint\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfo.cs
+D:\Waqar\Office\Complaint\Models\obj\Debug\netcoreapp3.1\Models.dll
+D:\Waqar\Office\Complaint\Models\obj\Debug\netcoreapp3.1\Models.pdb
+C:\Projects\Complaint\Models\bin\Debug\netcoreapp3.1\Models.deps.json
+C:\Projects\Complaint\Models\bin\Debug\netcoreapp3.1\Models.dll
+C:\Projects\Complaint\Models\bin\Debug\netcoreapp3.1\Models.pdb
+C:\Projects\Complaint\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfoInputs.cache
+C:\Projects\Complaint\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfo.cs
+C:\Projects\Complaint\Models\obj\Debug\netcoreapp3.1\Models.dll
+C:\Projects\Complaint\Models\obj\Debug\netcoreapp3.1\Models.pdb

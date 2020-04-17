@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+@section scripts{
+    <script>
+
+        $("#create").click(function () {
+            $('#create').prop('disabled', true);
+            $('#msg').html('Loading');
+        var formdata = { id: '', Email: $('#email').val(), Password: $('#password').val(), Mobile: '' };
+            $.ajax({
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                type: 'POST',
+                url: 'https://localhost:44303/Account/v1/login',
+                data: JSON.stringify(formdata),
+                success: function (response) {
+                    console.log(response);
+                    if (response.data != null) {
+                           $('#msg').html('Success');
+
+                        window.location.href = "@Url.Action("Index","Account")?id=" + response.data.id;
+                    }
+                    else {
+                      $('#msg').html('Error');
+                    }
+
+                },
+                error: function () {
+
+                  alert('error');
+                }
+
+            });
+});
+
+    </script>
+
+
+}
+
+<div class="login-form">
+    <form>
+        <h2 class="text-center">Log in</h2>
+        <div class="form-group">
+            <input type="text" id="email" class="form-control" placeholder="Username" required="required">
+        </div>
+        <div class="form-group">
+            <input type="password" id="password" class="form-control" placeholder="Password" required="required">
+        </div>
+        <div class="form-group">
+            <button type="button" id="create" class="btn btn-primary btn-block">Log in</button>
+        </div>
+        <div class="clearfix">
+            <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
+            <a href="#" class="pull-right">Forgot Password?</a>
+        </div>
+        <h3 id="msg"></h3>
+    </form>
+  
+    <p class="text-center"><a href="#">Create an Account</a></p>
+</div>
